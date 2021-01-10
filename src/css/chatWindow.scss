@@ -1,0 +1,66 @@
+.chatBox{
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    min-width: 300px;
+    max-width: 600px;
+    border: 2px solid black;
+    padding: 10px;
+    .messages{
+        height: 55vh;
+        padding: 15px;
+        overflow-y: scroll;
+        .messageText{
+            padding: 10px;
+            border-radius: 4px;
+            margin-bottom: 8px;
+        }
+        .you{
+           margin-left: 5%;
+            background-color: rgb(88, 85, 85);
+        }
+        .other{
+            margin-right: 5%;
+            background-color:darkgray;
+        }
+    }
+    .messageBox {
+       width: 100%;
+       padding: 10px;
+    }
+    .chatHeader{
+        display:flex;
+        justify-content: space-between;
+        padding: 10px;
+        .leave{
+            font-size: 0.75em;
+            padding: 0.3em;
+            background-color: darksalmon;
+        }
+        .statusText{
+            font-style: italic;
+            font-size: 0.8em;
+        }
+        #searchButton{
+
+            .searchHover{
+                display: none;
+            }
+            .search{
+                display: inline;
+            }
+            border-radius: 20%;
+            background-color: goldenrod;
+        }
+        #searchButton:hover {
+            .searchHover{
+                display: inline;
+            }
+            .search{
+                display: none;
+            }
+        }
+    }
+
+
+}
